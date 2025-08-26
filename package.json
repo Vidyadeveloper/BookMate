@@ -7,12 +7,12 @@
     "start": "node server.js",
     "dev": "nodemon server.js",
     "build": "echo 'Build completed'",
-      "preinstall": "node -e \"const fs=require('fs');fs.existsSync('./prebuild.js') && require('./prebuild')()\"",
+    "preinstall": "node -e \"const fs=require('fs');fs.existsSync('./prebuild.js') && require('./prebuild')()\"",
     "postinstall": "echo 'Installation completed - July 11'"
   },
   "dependencies": {
-    "@blaze-case-ai/blaze-engine": "^1.0.22",
-    "@blaze-case-ai/blaze-ux": "^1.0.2",
+    "@blaze-case-ai/blaze-engine": "^1.0.37",
+    "@blaze-case-ai/blaze-ux": "^1.0.6",
     "@fortawesome/fontawesome-free": "^6.6.0",
     "bcryptjs": "^3.0.2",
     "chart.js": "^4.4.4",
