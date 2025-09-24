@@ -23,10 +23,11 @@ const mongoose = require("mongoose");
 const app = express();
 app.use(
   cors({
-    origin: [process.env.DEV_URL, process.env.PRODUCTION_URL],
+    origin: [process.env.DEV_URL, process.env.PRODUCTION_URL, 'null'],
     credentials: true,
   })
 );
+ 
 // 1. Import your db-interaction module
 const dbInteraction = require("./node_modules/@blaze-case-ai/blaze-engine/server/database/db-interaction");
 
